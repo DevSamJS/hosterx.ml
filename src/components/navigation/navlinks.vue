@@ -16,11 +16,11 @@ export default {
     data: function(){
         return {
             navlinks: [
-                {value:'#freehosting', href: '#freehosting'},
-                {value:'#premium', href: '#premium'},
-                {value:'#howto', href: '#howto'},
-                {value:'#aboutus', href: '#about'},
-                {value:'#clientarea', href: '#clientarea'},
+                {value:'Freehosting', href: '#learnmore'},
+                {value:'Premium', href: '#premium'},
+                {value:'Howto', href: '#howto'},
+                {value:'Aboutus', href: '#about'},
+                {value:'Clientarea', href: '#signup'},
             ]
         }
     },

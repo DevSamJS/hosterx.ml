@@ -50,6 +50,7 @@ export default {
                 "logo . navlinks";
         background-color: #0c2246;
         color: aliceblue;
+        scroll-snap-align: end;
     }
     @media only screen and (max-width: 700px){
         .navigation {

@@ -2,22 +2,22 @@
   <div class="appheader">
     <div>
       <h1>Free Unlimited Web Hosting</h1>
-      <p>Completely free website hosting with unlimited disk space and bandwidth.</p>
+      <p>Completely free web hosting with unlimited disk space and bandwidth.<br/>Just click <b>signup</b> button to get started.</p>
       <btn
         href="#learnmore"
         value="Learn More"
         styl="
             grid-area: learnmore;
-            border-radius: 10px 0px 0px 10px;
+            border-radius: 7px 0px 0px 7px;
             margin-left: 10px;
           "
       />
       <btn
         href="#signup"
-        value="SignUp"
+        value="Signup Now"
         styl="
           grid-area: signup;
-          border-radius: 0px 10px 10px 0px;
+          border-radius: 0px 7px 7px 0px;
           margin-right: 10px;
         "
         />
@@ -39,17 +39,19 @@ export default {
     .appheader {
         background: url("/header.jpg");
         background-size: cover;
+        background-position: center;
         display: grid;
+        scroll-snap-align: start;
     }
     .appheader > div {
-        color: black;
+        color: #0c2246;
         background: aliceblue;
-        opacity: 0.6;
-        border-top: 1px dotted black;
-        border-bottom: 2px dotted black;
+        opacity: 0.8;
+        border-top: 3px dotted #0c2246;
+        border-bottom: 3px dotted #0c2246;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(8, auto);
+        grid-template-rows: repeat(5, auto) 40px repeat(2, auto);
         grid-template-areas:
             ". . . ."
             ". . . ."
@@ -63,17 +65,17 @@ export default {
     .appheader > div > h1 {
         text-align: center;
         grid-area: heading;
-        background: #ffffff;
-        opacity: 4;
     }
     .appheader > div > p {
         font-size: 16px;
         text-align: center;
         grid-area: subheading;
-        background: #ffffff;
-        opacity: 1;
     }
     @media only screen and (max-width: 700px){
+      .appheader {
+        background-size: cover;
+        background-position: center;
+      }
       .appheader > div{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -86,5 +88,6 @@ export default {
           ". ."
           ". .";
       }
+
     }
 </style>

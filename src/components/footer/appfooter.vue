@@ -1,12 +1,18 @@
 <template>
   <div class="appfooter">
-    <b>Copyright @2019 - Hosterx.ml</b>
+    <b>Copyright @ {{(new Date()).getFullYear()}} - {{getHostname}}</b>
+    <h4 style="display:inline-grid;">Created by: Sameer Tariq (@imsamtar)</h4>
   </div>
 </template>
 
 <script>
 export default {
   name: 'appfooter',
+  computed: {
+      getHostname: function(){
+          return window.location.hostname;
+      }
+  },
   components: {
 
   }
@@ -15,15 +21,17 @@ export default {
 
 <style>
 .appfooter {
+    border-top: 3px dotted aliceblue;
     background: #0c2246;
     color: aliceblue;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
+    grid-template-rows: 40px repeat(2, 25px);
+    grid-template-areas:
         ". . . . . . . . . ."
-        ". . . copyright copyright copyright copyright . . ."
-        ". . . . . . . . . .";
+        "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
+        "createdby createdby createdby createdby createdby createdby createdby createdby createdby createdby ";
+    scroll-snap-align: end;    
 }
 .appfooter > b {
     display: inline-grid;
@@ -31,4 +39,13 @@ export default {
     align-items: center;
     justify-items: center;
 }
+.appfooter > h4 {
+    display: inline-grid;
+    grid-area: createdby;
+    align-items: center;
+    justify-items: center;
+}
+/* @media only screen and (max-width: 700px){
+    
+} */
 </style>

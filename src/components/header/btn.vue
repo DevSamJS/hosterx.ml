@@ -21,18 +21,18 @@ export default {
 
 <style scoped>
     .btn {
-        font-size: 13px;
-        font-weight: 700;
+        font-size: 15px;
+        font-weight: 600;
         display: inline-grid;
         align-items: center;
-        background: black;
+        background: #0c2246;
         color: aliceblue;
         text-align: center;
         text-decoration: none;
     }
     .btn:hover {
-      background: black;
-      opacity: 0.9;
+      background: #0c2246;
+      opacity: 0.94;
     }
     @media only screen and (max-width: 700px){
       /* .btn{

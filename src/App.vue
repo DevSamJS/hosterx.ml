@@ -3,7 +3,7 @@
     <navigation/>
     <appheader />
     <appbody />
-    <appfooter />
+    <appfooter domainname=""/>
   </div>
 </template>
 
@@ -34,12 +34,16 @@ body {
   grid-template-rows: auto;
   grid-template-areas:
       ". app .";
+  scroll-snap-type:y mandatory;
+  overflow-y: scroll;
 }
+
 #app {
   grid-area: app;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto minmax(310px, max-content) minmax(768px, max-content) 150px;
-  grid-gap: 1px;
+  grid-template-rows: auto minmax(400px, auto) minmax(768px, auto) 100px;
 }
+
+
 </style>
