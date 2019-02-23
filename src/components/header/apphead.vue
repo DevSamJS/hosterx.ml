@@ -3,10 +3,24 @@
     <div>
       <h1>Free Unlimited Web Hosting</h1>
       <p>Completely free website hosting with unlimited disk space and bandwidth.</p>
-      <btn href="#learnmore" value="Learn More" styl="grid-area: learnmore;border-radius: 10px 0px 0px 10px;"/>
-      <btn href="#signup" value="SignUp" styl="
-      grid-area: signup;
-      border-radius: 0px 10px 10px 0px;"/>
+      <btn
+        href="#learnmore"
+        value="Learn More"
+        styl="
+            grid-area: learnmore;
+            border-radius: 10px 0px 0px 10px;
+            margin-left: 10px;
+          "
+      />
+      <btn
+        href="#signup"
+        value="SignUp"
+        styl="
+          grid-area: signup;
+          border-radius: 0px 10px 10px 0px;
+          margin-right: 10px;
+        "
+        />
     </div>
   </div>
 </template>
@@ -23,7 +37,7 @@ export default {
 
 <style>
     .appheader {
-        background: url("https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background: url("/header.jpg");
         background-size: cover;
         display: grid;
     }

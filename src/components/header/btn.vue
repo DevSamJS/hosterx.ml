@@ -21,6 +21,8 @@ export default {
 
 <style scoped>
     .btn {
+        font-size: 13px;
+        font-weight: 700;
         display: inline-grid;
         align-items: center;
         background: black;

@@ -3,20 +3,22 @@
     <navigation/>
     <appheader />
     <appbody />
-    <appfooter >Footer</appfooter>
+    <appfooter />
   </div>
 </template>
 
 <script>
 import navigation from './components/navigation/navigation.vue';
-import appheader from './components/header/head.vue';
+import appheader from './components/header/apphead.vue';
 import appbody from './components/body/appbody.vue';
+import appfooter from './components/footer/appfooter.vue';
 export default {
   name: 'app',
   components: {
     navigation,
     appheader,
-    appbody
+    appbody,
+    appfooter
   }
 }
 </script>
@@ -27,14 +29,17 @@ export default {
   font-family: monospace;
 }
 body {
-  height: 100vh;
+  display: grid;
+  grid-template-columns: auto minmax(300px,1500px) auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+      ". app .";
 }
 #app {
+  grid-area: app;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto minmax(310px, max-content) minmax(768px, max-content) 100px;
-}
-appfooter {
-  background: orange;
+  grid-template-rows: auto minmax(310px, max-content) minmax(768px, max-content) 150px;
+  grid-gap: 1px;
 }
 </style>
