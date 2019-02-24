@@ -1,5 +1,5 @@
 <template>
-  <div class="appfooter">
+  <div class="appfooter" id="footer">
     <b>Copyright @ {{(new Date()).getFullYear()}} - {{getHostname}}</b>
     <h4 style="display:inline-grid;">Created by: Sameer Tariq (@imsamtar)</h4>
   </div>

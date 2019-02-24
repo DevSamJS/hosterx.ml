@@ -38,6 +38,12 @@ export default {
   /* background: #0c2246; */
   
 }
+.fullSizeSection > h3 > a {
+  float: right;
+  color: aliceblue;
+  text-decoration: none;
+  margin: 0px 5px;
+}
 .fullSizeSection > .title {
     display: grid;
     align-items: center;
@@ -53,7 +59,7 @@ export default {
   padding: 50px 10%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  grid-auto-rows: 200px;
+  grid-auto-rows: minmax(200px, auto);
   grid-gap: 30px 30px;
 }
 @media only screen and (max-width: 700px){

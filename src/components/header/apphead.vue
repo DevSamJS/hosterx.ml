@@ -1,5 +1,5 @@
 <template>
-  <div class="appheader">
+  <div class="appheader" id="header">
     <div>
       <h1>Free Unlimited Web Hosting</h1>
       <p>Completely free web hosting with unlimited disk space and bandwidth.<br/>Just click <b>signup</b> button to get started.</p>

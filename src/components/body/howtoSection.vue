@@ -1,6 +1,10 @@
 <template>
   <div class="howtoSection fullSizeSection" :id="id">
-    <h3>{{title}}:-<a href="#" style="float: right;color: aliceblue; text-decoration: none">X</a></h3>
+    <h3>{{title}}:-
+      <a href="#">X</a>
+      <a href="#signup">UP</a>
+      <a href="#about">DOWN</a>
+    </h3>
     <hr>
     <div class="content">
       <featureCard

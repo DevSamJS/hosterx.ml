@@ -7,19 +7,16 @@
             placeholder="Email"
             type="email"
             name="email"
-            id="email"
         />
         <input
             placeholder="Username"
             type="username"
             name="username"
-            id="username"
         />
         <input
             placeholder="Password"
             type="password"
             name="password"
-            id="password"
         />
         <input
             type="button"
