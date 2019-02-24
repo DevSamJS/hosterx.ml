@@ -36,6 +36,7 @@ body {
       ". app .";
   scroll-snap-type:y mandatory;
   overflow-y: scroll;
+  background: #0c2246;
 }
 
 #app {

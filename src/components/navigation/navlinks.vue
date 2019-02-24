@@ -20,7 +20,7 @@ export default {
                 {value:'Premium', href: '#premium'},
                 {value:'Howto', href: '#howto'},
                 {value:'Aboutus', href: '#about'},
-                {value:'Clientarea', href: '#signup'},
+                {value:'Clientarea', href: '#Login'},
             ]
         }
     },

@@ -1,5 +1,5 @@
 <template>
-  <div class="fullSizeSection" :id="id">
+  <div class="howtoSection fullSizeSection" :id="id">
     <h3>{{title}}:-<a href="#" style="float: right;color: aliceblue; text-decoration: none">X</a></h3>
     <hr>
     <div class="content">
@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import featureCard from './featureCard'
+import featureCard from './cards/featureCard'
 export default {
-  name: 'fullSizeSection',
+  name: 'howtoSection',
   props: {
       title: String,
       id: String

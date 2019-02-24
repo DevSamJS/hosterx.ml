@@ -1,33 +1,41 @@
 <template>
   <div class="appbody">
-      <fullSizeSection title="LEARN MORE" id="learnmore"/>
-      <fullSizeSection title="SIGNUP" id="signup"/>
-      <fullSizeSection title="HOW TO" id="howto"/>
-      <fullSizeSection title="ABOUT" id="about"/>
-      <fullSizeSection title="PREMIUM" id="premium"/>
+      <learnmoreSection title="LEARN MORE" id="learnmore"/>
+      <signupSection title="SIGNUP" id="signup"/>
+      <howtoSection title="HOW TO" id="howto"/>
+      <aboutSection title="ABOUT" id="about"/>
+      <premiumSection title="PREMIUM" id="premium"/>
   </div>
 </template>
 
 <script>
-import fullSizeSection from './fullSizeSection.vue';
+import learnmoreSection from './learnmoreSection';
+import signupSection from './signupSection';
+import howtoSection from './howtoSection';
+import aboutSection from './aboutSection';
+import premiumSection from './premiumSection';
 export default {
   name: 'appbody',
   components: {
-    fullSizeSection
+    learnmoreSection,
+    signupSection,
+    howtoSection,
+    aboutSection,
+    premiumSection
   }
 }
 </script>
 
 <style>
 .appbody {
-  color:aliceblue;
+  color: aliceblue;
   display: grid;
-  grid-auto-rows: minmax(95vh, auto);
+  grid-auto-rows: minmax(700px, auto);
 }
 .fullSizeSection {
   scroll-snap-align: start;
   padding: 20px 10px;
-  background: #0c2246;
+  /* background: #0c2246; */
   
 }
 .fullSizeSection > .title {
@@ -42,12 +50,11 @@ export default {
     background: aliceblue;
 }
 .content {
-  padding: 10%;
+  padding: 50px 10%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-auto-rows: 200px;
   grid-gap: 30px 30px;
-  grid-column-start: span;
 }
 @media only screen and (max-width: 700px){
   .fullSizeSection {
