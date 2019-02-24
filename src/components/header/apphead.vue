@@ -37,11 +37,11 @@ export default {
 
 <style>
     .appheader {
+        scroll-snap-align: start;
         background: url("/header.jpg");
         background-size: cover;
         background-position: center;
         display: grid;
-        scroll-snap-align: start;
     }
     .appheader > div {
         color: #0c2246;

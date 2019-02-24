@@ -21,6 +21,7 @@ export default {
 
 <style>
 .appfooter {
+    scroll-snap-align: end;
     border-top: 3px dotted aliceblue;
     background: #0c2246;
     color: aliceblue;
@@ -31,7 +32,6 @@ export default {
         ". . . . . . . . . ."
         "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
         "createdby createdby createdby createdby createdby createdby createdby createdby createdby createdby ";
-    scroll-snap-align: end;    
 }
 .appfooter > b {
     display: inline-grid;

@@ -42,6 +42,7 @@ export default {
 
 <style scoped>
     .navigation {
+        scroll-snap-align: start;
         min-height: 60px;
         display: grid;
         grid-template-columns: max-content auto max-content;
@@ -50,7 +51,6 @@ export default {
                 "logo . navlinks";
         background-color: #0c2246;
         color: aliceblue;
-        scroll-snap-align: end;
     }
     @media only screen and (max-width: 700px){
         .navigation {
