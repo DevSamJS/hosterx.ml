@@ -3,7 +3,7 @@
     <navigation/>
     <appheader />
     <appbody />
-    <appfooter domainname=""/>
+    <appfooter/>
   </div>
 </template>
 
@@ -34,7 +34,7 @@ body {
   grid-template-rows: auto;
   grid-template-areas:
       ". app .";
-  scroll-snap-type:y mandatory;
+  scroll-snap-type:y proximity;
   overflow-y: scroll;
   background: #0c2246;
 }
