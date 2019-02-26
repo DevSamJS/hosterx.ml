@@ -66,7 +66,7 @@ export default {
 }
 @media only screen and (max-width: 700px){
   .fullSizeSection {
-    padding: 20px 5px;
+    padding: 60px 5px 0px 5px;
   }
   .content {
     padding: 10px 0px;
