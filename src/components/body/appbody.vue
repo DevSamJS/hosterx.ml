@@ -28,13 +28,15 @@ export default {
 
 <style>
 .appbody {
+  position: relative;
+  top: 60px;
   color: aliceblue;
   display: grid;
   grid-auto-rows: minmax(700px, auto);
 }
 .fullSizeSection {
   scroll-snap-align: start;
-  padding: 20px 10px;
+  padding: 60px 10px 0px 10px;
   /* background: #0c2246; */
   
 }
@@ -42,7 +44,7 @@ export default {
   float: right;
   color: aliceblue;
   text-decoration: none;
-  margin: 0px 5px;
+  margin: 60px 5px;
 }
 .fullSizeSection > .title {
     display: grid;

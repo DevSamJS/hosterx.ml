@@ -1,11 +1,5 @@
 <template>
   <div class="signupSection fullSizeSection" :id="id">
-    <h3>{{title}}:-
-      <a href="#">X</a>
-      <a href="#learnmore">UP</a>
-      <a href="#howto">DOWN</a>
-    </h3>
-    <hr>
     <div class="content">
       <loginSignupCard
         :key="loginSignupCard.button"

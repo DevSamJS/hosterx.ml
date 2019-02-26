@@ -1,6 +1,6 @@
 <template>
     <div class="showhide" @click="$emit('togglenavlinks')">
-        +/-
+        +
     </div>
 </template>
 

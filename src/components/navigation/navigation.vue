@@ -42,7 +42,10 @@ export default {
 
 <style scoped>
     .navigation {
+        z-index: 10;
+        position: fixed;
         scroll-snap-align: start;
+        width: 100%;
         min-height: 60px;
         display: grid;
         grid-template-columns: max-content auto max-content;

@@ -1,11 +1,5 @@
 <template>
   <div class="premiumSection fullSizeSection" :id="id">
-    <h3>{{title}}:-
-      <a href="#">X</a>
-      <a href="#about">UP</a>
-      <a href="#premium">DOWN</a>
-    </h3>
-    <hr>
     <div class="content">
       <featureCard
         :key="featureCard.src"

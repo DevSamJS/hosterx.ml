@@ -43,7 +43,7 @@ body {
   grid-area: app;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto minmax(400px, auto) minmax(768px, auto) 100px;
+  grid-template-rows: minmax(400px, auto) minmax(768px, auto) 100px;
 }
 
 

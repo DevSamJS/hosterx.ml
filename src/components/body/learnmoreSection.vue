@@ -1,11 +1,5 @@
 <template>
   <div class="learnmoreSection fullSizeSection" :id="id">
-    <h3>{{title}}:-
-      <a href="#">X</a>
-      <a href="#header">UP</a>
-      <a href="#signup">DOWN</a>
-    </h3>
-    <hr>
     <div class="content">
       <featureCard
         :key="featureCard.src"
@@ -23,7 +17,6 @@ import featureCard from './cards/featureCard'
 export default {
   name: 'learnmoreSection',
   props: {
-      title: String,
       id: String
   },
   data: function(){
