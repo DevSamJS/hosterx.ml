@@ -39,7 +39,6 @@ export default {
     .appheader {
         position: relative;
         top: 60px;
-        scroll-snap-align: start;
         background: url("/header.jpg");
         background-size: cover;
         background-position: center;
